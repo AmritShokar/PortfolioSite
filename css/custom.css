@@ -107,13 +107,22 @@ p {
   padding: 0px;
   margin: 10px;
   margin-left: 15px;
+  font-size: 120%;
+}
+
+.left-list-project {
+  list-style-type: none;
+  text-align: left;
+  padding: 0px;
+  margin: 10px;
+  margin-left: 15px;
 }
 
 .centered-text-block {
   font-size: 90%;
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -143,7 +152,7 @@ p {
 #header-title {
   color: black;
   font-family: 'Orbitron', sans-serif;
-  font-size: 140%;
+  font-size: 120%;
   font-weight: bold;
 }
 #header-menu-item {
@@ -176,12 +185,15 @@ p {
   width: 100%;
 }
 .project-list-description {
-  font-size: 120%;
+  font-size: 100%;
   padding-top: 10px;
   padding-bottom: 5px;
 }
 .list-header-about {
   font-size: 150%;
+}
+.list-header-other {
+    padding-left: 10px;
 }
 
 @media(min-width: 350px) {
