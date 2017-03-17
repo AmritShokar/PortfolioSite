@@ -1,0 +1,235 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+li {
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-default{
+  background:transparent;
+  background-image:none;
+  border-color:transparent;
+  box-shadow:none;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+#landing-image {
+    background-image: url('../img/kelowna-landing-image.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.portfolio-section {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.project-section {
+  height: 355vh;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.contact-section {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.portfolio-pic-container {
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+.top-space {
+  padding-top: 10px;
+}
+
+.centered-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  font-size: 120%;
+}
+
+#centered-list-name {
+  font-size: 130%;
+}
+
+.left-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0px;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.centered-text-block {
+  font-size: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list-header {
+  margin-left: 10px;
+}
+
+.contact-info {
+  text-align: center
+}
+#contact-icon {
+  font-size: 900%;
+}
+#footer-custom {
+  background-color: #1E9689;
+}
+.copy-mark {
+  padding-top: 97vh;
+}
+.blue {
+  background-color: #5881BA;
+}
+.green {
+  background-color: #5BC756;
+}
+#header-title {
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 140%;
+  font-weight: bold;
+}
+#header-menu-item {
+  color: white;
+  font-size: 150%;
+}
+#header-menu-list {
+  padding-top: 30px;
+}
+#menu-icon {
+  color: white;
+}
+#clock-display {
+  font-size: 400%;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+#landing-image-author {
+  position: absolute;
+  z index: 100;
+  color: white;
+}
+.project-screenshot {
+  padding: 0px;
+  margin: 0px;
+  width: 49%;
+}
+.project-screenshot-single {
+  margin: 0px;
+  width: 100%;
+}
+.project-list-description {
+  font-size: 120%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+@media(min-width: 350px) {
+  .project-section {
+    height: 315vh;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+  }
+}
+
+@media(min-width: 750px) {
+  .col-6 {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    padding: 0px;
+    overflow: auto;
+  }
+  .portfolio-image-desktop {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    vertical-align: middle;
+  }
+  .portfolio-other-desktop {
+    position: relative;
+    top: 30%;
+    vertical-align: middle;
+  }
+  .project-section {
+    height: 100vh;
+  }
+  .left-list {
+    margin-top: 0%;
+  }
+  .list-header {
+    margin-top: 5%;
+  }
+  .list-header-about {
+    margin-top: 30%;
+  }
+  .list-header-other {
+    margin-top: 45%;
+  }
+  .centered-text-block {
+    font-size: 130%;
+  }
+  #header-title {
+    font-size: 200%;
+  }
+}

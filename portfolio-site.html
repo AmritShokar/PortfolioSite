@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Amritpal Shokar</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/landing-page.css" rel="stylesheet"> -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+</head>
+
+<body onload="clockStart()">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default topnav" role="navigation">
+      <div class="container topnav">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand topnav" href="#"><span id="header-title">Amritpal Shokar</span></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul id="header-menu-list" class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="#AboutMe" onclick="aboutMeLink()"><span id="header-menu-item">About me</span></a>
+                  </li>
+                  <li>
+                      <a href="#Skills" onclick="skillsLink()"><span id="header-menu-item">Skills</span></a>
+                  </li>
+                  <li>
+                      <a href="#Projects" onclick="projectsLink()"><span id="header-menu-item">Projects</span></a>
+                  </li>
+                  <li>
+                      <a href="#Contact" onclick="contactLink()"><span id="header-menu-item">Contact</span></a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+  <!-- Landing Page -->
+  <div id="landing-image">
+    <!-- Clock -->
+
+    <p id="landing-image-author">
+      <!-- By Darren Kirby (bulliver) - http://www.flickr.com/photos/badcomputer/3719205158/,
+      CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=25886997 -->
+      By Darren Kirby (bulliver) - CC BY-SA 2.0
+    </p>
+    <div id="clock-display">
+    </div>
+  </div>
+
+    <!-- About Me -->
+    <div id="aboutme" class="portfolio-section green">
+      <div class="col-6">
+        <div class="portfolio-image-desktop">
+          <div class="portfolio-pic-container top-space">
+            <img src="img/profile-pic-circular.png" class="img-responsive portfolio-image"/>
+          </div>
+          <ul class="centered-list">
+            <li id="centered-list-name">Amritpal Shokar</li>
+            <li>Alumni of UBC Okanagan</li>
+            <li>Bachelor of Science in Computer Science</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <h2 class="list-header-about">Projects:</h2>
+        <p class="centered-text-block">
+          I am a Bachelor of Science student with a Major in Computer Science at the
+          University of British Columbia Okanagan. My personal interests include mobile application
+          development and backend development. I have working experience with Java, JavaScript,
+          Python, PHP, Swift, SQL, Debian based operating systems, and native mobile development
+          experience with both Android and ios platforms. I also have worked in multiple team based
+          projects and have agile scrum development experience among others. Currently looking for
+          work experience to apply my skills.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="portfolio-section blue">
+      <div class="col-6">
+        <div class="portfolio-other-desktop">
+          <div class="portfolio-pic-container top-space">
+            <a href="#" data-toggle="tooltip" title="Icons made by Freepik
+            from www.flaticon.com is licensed by CC 3.0 BY">
+              <img src="img/laptop.svg" class="img-responsive portfolio-image"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 top-space">
+        <h4 class="list-header-other">Working experience with:</h4>
+        <ul class="left-list">
+          <li>Languages: HTML/CSS/JS, Java, Python, PHP, Python, Swift</li>
+          <li>DBMS: MySQL, PostgreSQL, SQLServer, MongoDB</li>
+          <li>Other: JIRA/Confluence, Git(GitHub), Linux Command-Line, Amazon Web Services</li>
+          <li>Native Android and IOS, Django Framework, Lamp Stack, Servlet development</li>
+          <li>REST Api development using Django</li>
+          <li>Agile Scrum Development</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="project-section green">
+      <div class="col-6">
+        <div class="portfolio-other-desktop">
+          <div class="portfolio-pic-container top-space">
+            <a href="#" data-toggle="tooltip" title="Icons made by Madebyoliver
+            from www.flaticon.com is licensed by CC 3.0 BY">
+              <img src="img/folder.svg" class="img-responsive portfolio-image"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <h2 class="list-header">Projects:</h2>
+        <ul class="left-list">
+          <li>
+            <h3 style="margin: 0px">Project Adventure</h3>
+            <br>
+            <img src="img/project-adventure-1.png"/ class="project-screenshot">
+            <img src="img/project-adventure-2.png"/ class="project-screenshot">
+            <ul class="project-list-description">
+              <li>A position tracking application that creates trails</li>
+              <li>An Android application that uses the Google Maps API</li>
+              <li>Position tracked using Fused Location API</li>
+            </ul>
+          </li>
+          <li>
+            <h3 style="margin: 0px">Bridge Services Calendar</h3>
+            <br>
+            <img src="img/bridge-calendar-1.png"/ class="project-screenshot">
+            <img src="img/bridge-calendar-2.png"/ class="project-screenshot">
+            <ul class="project-list-description">
+              <li>A calendar application that hosts Bridge Service events</li>
+              <li>An IOS application that retreives and displays monthly events</li>
+              <li>Backend server hosts events using Google Calendar API</li>
+              <li>Uses push notifications to alert users of event modifications</li>
+            </ul>
+          </li>
+          <li>
+            <h3 style="margin: 0px">Kelowna Fastball HomePage</h3>
+            <br>
+            <img src="img/kelowna-fastball.png"/ class="project-screenshot-single">
+            <ul class="project-list-description">
+              <li>Kelowna Fastball website given an overhaul as part of a Directed Studies project</li>
+              <li>Custom Wordpress plugin created in order to organize teams in multiple leagues</li>
+              <li>VBA Macros written to auto schedule league tournaments.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 style="margin: 0px">KelownaSolar Map</h3>
+            <ul class="project-list-description">
+              <li>Developed a solar map project for City of Kelowna using the Google Maps API</li>
+              <li>Web applications displays the solar energy potential of a target building selected by the user</li>
+              <li>The solar potential function uses building roof surface area, and roof angles to determine energy production.</li>
+              <li>MySQL and PHP used on back-end to store individual building information on server</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-section blue">
+      <div class="col-6">
+        <div class="portfolio-other-desktop">
+          <div class="portfolio-pic-container top-space">
+            <a href="#" data-toggle="tooltip" title="Icons made by Freepik
+            from www.flaticon.com is licensed by CC 3.0 BY">
+              <img src="img/message.svg" class="img-responsive portfolio-image"/>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 class="list-header-other">Contact:</h3>
+        <div class="contact-info">
+          <img src="img/contact-info.png" class="img-responsive portfolio-image"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-custom" class="contact-section">
+      <div class="copy-mark">
+        <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2017 Amritpal Shokar
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Javascript for portfolio -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
