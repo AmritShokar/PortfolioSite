@@ -72,6 +72,13 @@ p {
   color: white;
 }
 
+.courses-section {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
 .portfolio-pic-container {
   height: auto;
   width: 60%;
